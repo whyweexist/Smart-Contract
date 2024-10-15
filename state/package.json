@@ -1,0 +1,32 @@
+{
+  "name": "Casher",
+  "version": "0.1.0",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "lint": "solhint 'contracts/**/*.sol'",
+    "format": "prettier --write 'contracts/**/*.sol'"
+  },
+  "devDependencies": {
+    "hardhat": "^2.0.0",
+    "ethers": "^5.0.0",
+    "solhint": "^3.0.0",
+    "prettier": "^2.0.0"
+  },
+  "dependencies": {
+    "gstd": "git+https://github.com/gear-tech/gear.git#v1.1.0",
+    "gmeta": "git+https://github.com/gear-tech/gear.git#v1.1.0",
+    "io": "git+https://github.com/gear-tech/gear.git#v1.1.0"
+  },
+  "hardhat": {
+    "solidity": {
+      "version": "0.8.0",
+      "settings": {
+        "optimizer": {
+          "enabled": true,
+          "runs": 200
+        }
+      }
+    }
+  }
+}
